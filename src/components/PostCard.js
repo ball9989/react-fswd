@@ -53,7 +53,8 @@ const PostCard = ({ data, users, comment }) => {
     return (
         <>
         <Card className="mt-2 mb-2 shadow-lg">
-        {users.map((u) => {
+    
+        {users.map((u) =>{
             if(u.id === data.author){
                 return (
                     <CardHeader

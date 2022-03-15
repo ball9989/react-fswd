@@ -17,9 +17,6 @@ const CommentForm = ({ postId }) => {
         setComment(event.target.value);
     };
 
-    function refreshPage() {
-        window.location.reload(false);
-      }
 
     const handleSubmit = async () => {
         const response = await fetch('https://fswd-wp.devnss.com/wp-json/wp/v2/comments', {
@@ -30,6 +27,8 @@ const CommentForm = ({ postId }) => {
                 Authorization: 'Basic ZnN3ZDpmc3dkLWNtcw==',
             }
         })
+        console.log(response)
+        
             setComment('')
             setName('')
             if(alert('Comment success')){}
@@ -62,7 +61,7 @@ const CommentForm = ({ postId }) => {
             color="info"
         />
         <FormGroup>
-            <Button disabled={comment == ''} variant="outlined" color='success' size='large' onClick={() => handleSubmit()}
+            <Button disabled={comment === ''} variant="outlined" color='success' size='large' onClick={() => handleSubmit()}
                 style={{
                     fontFamily: 'Poppins',
                     margin: '1rem 0',
