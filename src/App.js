@@ -18,10 +18,11 @@ const App = () => {
     </div>
     
       <div className="myname shadow-lg">
-        <div className="container">
-      <div className="glitch" data-text="Kritsakorn Amnajsatit">Kritsakorn Amnajsatit</div>
-      <p className="subtitle mt-2">62070006  </p>
-      </div>
+        <div class="contain">
+        <div class="glitch" data-text="Kritsakorn">Kritsakorn</div>
+        <div class="glow">Kritsakorn</div>
+        <p class="subtitle">ID 62070006</p>
+        </div>
       </div>
 
     </Container>
